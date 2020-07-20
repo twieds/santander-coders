@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p></p><em> Texto que deve ser enfatizado </em></p>
+    <p></p><mark> Texto que será realçado com fundo amarelo</mark></p>
+    <p></p><cite> Citação de texto, como um livro, filme </cite></p>
+    <p></p><abbr title="World Wide Web Consortium"> W3C(Abreviação) </abbr></p>
+
+    <!-- action:  vai para o backend -->
+    <form action="" method="POST">
+
+        <!--
+        campo de input do usuário
+        types: text, email, password submit
+        required: valida se o campo foi preenchido/selecionado
+        -->
+        <label>Usuário</label>
+        <input type="text" name="usuario" value="" required />
+
+        <!-- radio box, name deve ser o mesmo para fazer parte do mesmo grupo -->
+        <br><br>
+        <input type="radio" name="estado_civil" value="Solteiro" required />
+        <input type="radio" name="estado_civil" value="Casado" required />
+        <br>
+
+        <!-- checkbox, monta uma lista de valores selecionados -->
+        <br>
+        <input type="checkbox" name="hobbies" value="Surf" required />
+        <input type="checkbox" name="hobbies" value="Música" required />
+        <br>
+
+        <!-- atributo placeholder: serve como ajuda ao usuário -->
+        <br><br>
+        <label>Email</label>
+        <br>
+        <input type="email" placeholder="user@email.com" />
+
+        <!-- select, dropdown com opções para seleção -->
+        <!-- importante: o valor que vai para o backend é o "value" e não o texto-->
+        <select name="pais">
+            <option value="AR"> Argentina </option>
+            <option value="BR"> Brasil </option>
+            <option value="CO"> Colômbia </option>
+        </select>
+
+        <!-- dropdown agrupado -->
+        <select name="pais">
+            <optgroup label="América do Sul">
+                <option value="AR"> Argentina </option>
+                <option value="BR"> Brasil </option>
+                <option value="CO"> Colômbia </option>
+            </optgroup>
+            <optgroup label="América do Norte ">
+                <option value="US"> Estados Unidos </option>
+                <option value="MEX"> México </option>
+                <option value="CAN"> Canada </option>
+            </optgroup>
+        </select>
+
+        <br><br>
+        <!-- textarea, para textos grandes. o resize: dimensoes em que a area pode ser redimensionada -->
+        <textarea rows="4" cols="54" name="mensagem" style="resize: vertical;"></textarea>
+
+        <br><br>
+        <!-- buttons -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        <button type="button">Outra ação</button>
+
+        <br><br>
+        <a href="#">TESTE</a>        
+    </form>
+
+    <!-- span, usado normalmente para formatação em inline-->
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rem, placeat non provident libero
+            dignissimos, aut excepturi ab dolorum illum adipisci ut eos expedita velit vel quasi ducimus magnam
+            <span style="color: palevioletred;">saepe</span>.
+        </p>
+    </div>
+
+    <!-- para textos pré formatados -->
+    <pre>
+        Tex
+           to
+                pre
+            forma
+              tado    
+    </pre>
+
+    <!-- seção de conteúdo monotemático - normalmente para bloco específicos -->
+    <section>
+        <h1>Cabeçalho</h1>
+        <p>Um monte de conteúdo incrível</p>
+        <!-- informações dentro de uma seção -->
+        <article>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi deleniti quia repellat nesciunt, recusandae,
+                rerum dolorem, reprehenderit aliquam tenetur aperiam iste eveniet quaerat sed delectus. Repellendus harum eveniet
+                possimus! Numquam.</p>
+        </article>
+    </section>
+    
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 body {
     /*font-family: sans-serif;*/
     font-family: 'Quicksand', sans-serif;
-    background-image: url("/HTML-CSS/aula_03/exercicio_1/imagens/dot-grid.png");
+    background-image: url("/exercicio_continuo_CV/imagens/dot-grid.png");
     background-repeat: repeat;
     background-position: right top;
     background-attachment: fixed;
@@ -30,4 +30,37 @@ p {
     background-color: thistle;
     color: royalblue;
     font-size: 22px;
+}
+
+input:focus{
+    background-color: rgb(231, 231, 231);
+}
+
+textarea {
+    resize: vertical;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: hotpink;
+    text-decoration: dashed;
+    font-weight: bold;
+}
+option {
+    font-family: 'Quicksand', sans-serif;
+}
+
+img {
+    border-radius: 180px;
+}
+
+img:hover {
+    border-radius: 10px;
+}
+
+mark{
+    background-color: palegreen;
 }

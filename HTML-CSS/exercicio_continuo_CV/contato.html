@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>CV - Thaís Wiedemann - Contato</title>
+</head>
+<body>
+    <h1>Formulário de Contato</h1>
+
+    <form action="" method="POST">
+        <label> Nome: </label><br>
+        <input type="text" name="nome" value="" required/><br><br>
+
+        <label> Sobrenome: </label><br>
+        <input type="text" name="sobrenome" value="" required/><br><br>
+
+        <label> Email: </label><br>
+        <input type="email" placeholder="user@email.com"/><br><br>
+
+        <label> Assunto: </label><br>
+        <select name="assunto">
+            <option value="duvidas"> Dúvidas </option>
+            <option value="parceria"> Parceria </option>
+            <option value="outro"> Outro </option>
+        </select><br><br>
+
+
+        <label> Gênero: </label><br>
+        <input type="radio" name="genero" value="feminino"/> Feminino
+        <input type="radio" name="genero" value="masculino"/> Masculino
+        <input type="radio" name="genero" value="naoresponder"/> Prefiro não responder
+        <br><br>
+
+        <label> Passatempos: </label><br>       
+        <input type="checkbox" name="passatempos" value="surf"/> Surf
+        <input type="checkbox" name="passatempos" value="musica"/> Música
+        <input type="checkbox" name="passatempos" value="programação"/> Programação
+        <input type="checkbox" name="passatempos" value="cozinha"/> Cozinha
+        <input type="checkbox" name="passatempos" value="filmes"/> Filmes
+        <br><br><br>
+
+        <label> Comentários: </label><br> 
+        <textarea rows="4" cols="54" name="mensagem" required></textarea>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+    <br><br>
+    <a href="index.html"> Voltar ao meu CV </a> <br>
+    <a href="hobbies.html"> Voltar aos meus hobbies </a>
+</body>
+</html>

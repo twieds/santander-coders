@@ -1,0 +1,15 @@
+a {
+    text-decoration: none;
+    color: mediumslateblue;
+}
+
+/* cor do link quando clicado */
+a:active {
+    color:rebeccapurple;
+}
+
+/* cor da caixa de input */
+input {
+    background-color: lightgray;
+}
+
