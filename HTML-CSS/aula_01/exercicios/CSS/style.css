@@ -1,0 +1,22 @@
+body {
+    /*font-family: sans-serif;*/
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    color:peru;
+    text-align: center;
+    font-style: italic;
+}
+
+h3 {
+    color: tomato;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+p {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 23px;
+}

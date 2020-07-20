@@ -1,0 +1,106 @@
+body {
+    background-image: url("/aula_03/exercicio2/images/background.png");
+    background-repeat: repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+header{
+    background-color:rgb(93, 132, 182);
+    position: absolute;
+    width: 960px;
+    height: 50px;
+    left: 30px;
+    top: 33px;
+}
+
+h3 {
+    color: white;
+    margin: auto;
+    margin-top: 5px;
+    margin-left: 75px;
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+
+.menu_text {
+    margin-left: 150px;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.menu_options {
+    margin-top: 17px;
+    margin-left: 30px;
+}
+
+.logo {
+    position: absolute;
+    left: 15px;
+    z-index: 0;
+}
+
+.products_container {
+    background-color:rgba(211, 211, 211, 0.513);
+    position: absolute;
+    width: 960px;
+    left: 30px;
+    top: 125px;
+}
+
+.product_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.product {
+    width: 300;
+    position: relative;
+}
+
+.product_name {
+    background-color: rgba(00, 00, 00, 0.30);
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    bottom: 150px;
+    left: 10px;
+    z-index: 4;
+}
+
+.img_format {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    z-index: 2;
+}
+
+.btn_ver_mais {
+    background-color:rgb(93, 132, 182);;
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    bottom: 25px;
+    left: 85px;
+    z-index: 3;
+    border-radius: 20px;
+}
+
+.ver_mais_text {
+    position: relative;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    left: 35px;
+    top: 12px;    
+}
+
+.sale_label {
+    position: absolute;    
+    height:58px;
+    left: 245px;
+    top: 18px;
+    z-index: 4;
+}

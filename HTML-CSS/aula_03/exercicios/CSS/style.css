@@ -1,0 +1,33 @@
+body {
+    /*font-family: sans-serif;*/
+    font-family: 'Quicksand', sans-serif;
+    background-image: url("/aula_03/exercicios/imagens/dot-grid.png");
+    background-repeat: repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+h1 {
+    color:rgba(69, 35, 123, 0.7);
+    text-align: center;
+    font-style: italic;
+}
+
+h3 {
+    color: lightcoral;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+p {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+/* classe */
+.destaque {
+    background-color: thistle;
+    color: royalblue;
+    font-size: 22px;
+}

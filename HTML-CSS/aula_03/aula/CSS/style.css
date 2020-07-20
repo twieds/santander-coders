@@ -1,0 +1,51 @@
+/* pai */
+div, p {
+    background-color:lightblue;
+}
+
+/* filho */
+div div{
+    background-color:indianred;
+}
+
+/* id */
+#div1 {
+    background-color: slateblue;
+}
+
+#divEmail {
+    background-color: cornflowerblue;
+}
+
+/* classe */
+.fundoDiv {
+    background-color: lightpink;
+}
+
+/* classes testediv.html*/
+/* absoluto, toma como base a posição 0,0 do body ou a div pai se ela tiver uma position definida*/
+
+.classe1 {
+    background-color: royalblue;
+    width:  800px;
+    height: 800px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.classe2 {
+    background-color: thistle;
+    width:  400px;
+    height: 400px;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+.classe3 {
+    background-color: lightcoral;
+    width:  200px;
+    height: 200px;
+}
+
