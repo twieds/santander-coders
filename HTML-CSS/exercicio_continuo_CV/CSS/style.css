@@ -8,13 +8,13 @@ body {
 }
 
 h1 {
-    color:rgba(69, 35, 123, 0.7);
+    color:plum;
     text-align: center;
     font-style: italic;
 }
 
 h3 {
-    color: lightcoral;
+    color: rgb(116, 231, 144);
     font-style: normal;
     text-decoration: underline;
 }
@@ -23,13 +23,6 @@ p {
     text-align: justify;
     font-size: 14px;
     line-height: 23px;
-}
-
-/* classe */
-.destaque {
-    background-color: thistle;
-    color: royalblue;
-    font-size: 22px;
 }
 
 input:focus{
@@ -49,18 +42,87 @@ a:hover {
     text-decoration: dashed;
     font-weight: bold;
 }
+
 option {
     font-family: 'Quicksand', sans-serif;
 }
 
-img {
-    border-radius: 180px;
+mark {
+    background-color: palegreen;
 }
 
-img:hover {
+footer {
+    text-align: center;
+    width: 960px;
+}
+
+header {
+    width: 960px;
+}
+
+.destaque {
+    background-color: thistle;
+    color: royalblue;
+    font-size: 22px;
+}
+
+.secao {
+    display: block;
+    margin: 20px;
+    width: 960px;
+    padding: 30px 30px 30px 30px;
+    border: dotted 2px royalblue;
+}
+
+.img-hobbies {
+    border-radius: 180px;
+    width: 160px;
+    margin: 12px;
+}
+
+.img-hobbies:hover {
     border-radius: 10px;
 }
 
-mark{
-    background-color: palegreen;
+
+.icon {
+    width: 20px;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 990px;
+    padding: 30px 30px 30px 30px;
+    
+}
+
+.container-a{
+    background-color: lavender;
+}
+
+.container-b{
+    height: 700px;
+    width: 330px;
+    background-color: lightpink;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container-c {    
+    height: 700px;
+    width: 660px;
+    background-color: rgb(248, 246, 246);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container-d {    
+    background-color: lightgray;
+    text-align: center;
+}
+
+.header-links{
+    display: inline-block;
+    text-align: center;
+    padding-left: 60px;
 }
