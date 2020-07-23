@@ -1,0 +1,44 @@
+/*
+    flex-direction: column; /* column-reverse, row, row-reverse (row default
+    flex-wrap: wrap; /*nowrap, wrap-reverse (quebra a linha)
+    justify-content: flex-start;/*flex-end, center, space-between, space-around
+    align-items: center;/*flex-end, flex-start, stretch
+    align-content: center;/*flex-end, flex-start, stretch
+*/
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    /*flex-wrap: nowrap -> pega o tamanho da tela e 
+    faz caber dentro da linha ou coluna 
+    independente do tamanho escolhido*/
+}
+
+.item{
+    background-color: lightcoral;
+    width: 100px;
+    height: 100px;
+    border: lightskyblue solid 2px;
+}
+
+/*
+.item1{
+    order: 1;
+    flex-grow: 1;
+}
+
+.item2{
+    order: 2;
+    flex-grow: 2;
+}
+
+.item2{
+    order: 3;
+    flex-grow: 3;
+}
+*/
+
+

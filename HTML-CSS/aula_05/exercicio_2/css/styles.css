@@ -1,0 +1,107 @@
+body { 
+    margin: 0%;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    /* box-sizing: border-box; */
+    height: 20vw;
+    width: 100vw;
+    border: rebeccapurple 3px solid;
+    background-color: lavender;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+p {
+    /* font-size: 13px; */
+    font-size: 0.8125em;
+}
+
+strong {
+    font-size: 1.1538em;
+}
+
+.container{
+    max-width: 1200px;
+    border: red 3px solid;
+    display: flex;
+    flex-direction: row;
+}
+
+.caixa-a {
+    width: 21%;
+    width: 250px;
+    border: black 2px solid;
+    background-color: slateblue;
+}
+
+.caixa-b {
+    width: 67%;    
+    margin: 0% 2% 0% 2%;
+    border:  black 2px solid;
+    background-color: salmon;
+}
+
+.caixa-c {
+    width: 8.3%;
+    border: black 2px solid;
+    background-color: silver;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        padding: 20px 20px 20px 20px;
+        width: 95vw;
+    }
+
+    .caixa-a {
+        width: 40%;
+        float: left;
+    }
+
+    .caixa-b {
+        width: 55%;
+        margin: 0% 0% 0% 0%;
+        float: right;
+    }
+
+    .caixa-c {
+        width: 100%;
+        position: absolute;
+        left: 0%;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        padding: 0 0 0 0;
+        width: 100vw;
+    }
+    
+    .caixa-a {
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+    }
+
+    .caixa-b {
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .caixa-c {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    body {
+        font-size: 1.3em;
+    }
+}

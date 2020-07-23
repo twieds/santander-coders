@@ -1,0 +1,40 @@
+body {
+    background-color: cornflowerblue;
+    font-size: 16px;
+}
+
+.container{
+    width: 40%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.profile {
+    height: 120px;
+    /* margin-bottom: 10px; */
+    /* padding: 10px; */
+}
+
+.info {
+    position: relative;
+    left: 20px;
+}
+
+.profile:not(:last-child)::after {
+    content: "___________________________";
+    
+}
+
+.profile h3 {
+    font-size: 1em;
+}
+
+.profile img {
+    position: relative;
+    border-radius: 50%;
+    width: 20%;
+    float: left;
+    margin: 10px;
+}
