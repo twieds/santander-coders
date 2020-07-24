@@ -1,34 +1,40 @@
 body {
     background-color: cornflowerblue;
     font-size: 16px;
+    font-family: 'Sora', sans-serif;
 }
 
 .container{
-    width: 40%;
+    width: 35%;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-}
-
-.profile {
-    height: 120px;
-    /* margin-bottom: 10px; */
-    /* padding: 10px; */
+    margin: 3% auto;
+    padding: 1% 1% 2% 1%;
 }
 
 .info {
     position: relative;
-    left: 20px;
+    left: 7%;
 }
 
 .profile:not(:last-child)::after {
-    content: "___________________________";
-    
+    content:" ";
+    width:98%;
+    height:1px;
+    display: inline-block;
+    background: lightgrey;
+    margin: 0 auto;
 }
 
 .profile h3 {
-    font-size: 1em;
+    font-size: 1.2em;
+    margin-top: 5%;
+    color: rgb(141, 141, 141);
+}
+
+.profile span {
+    color: gray;
 }
 
 .profile img {
@@ -36,5 +42,5 @@ body {
     border-radius: 50%;
     width: 20%;
     float: left;
-    margin: 10px;
+    padding: 2% 2% 0;
 }

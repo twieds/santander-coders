@@ -1,0 +1,149 @@
+body {
+    background-image: url("/aula_05/exercicio_1/assets/images/bg-ripples.png");
+    background-repeat: repeat;
+    font-size: 16px;
+    font-family: 'Sora', sans-serif;
+    width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    width: 960px;
+    margin: 0 auto;
+    /* position: fixed; */
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: darkolivegreen;
+    height: 100px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    text-align:center;
+    color: white;    
+    padding: 10px;
+    width: 130px;
+    background-color: darkolivegreen;
+}
+
+footer a::after {
+    content: "|";
+    margin-left: 2%;
+}
+
+.footer-container {
+    padding: 3%;
+}
+
+/* --------------------- HEADER --------------------- */
+.header-logo-wrapper {
+    margin: 0 auto;
+    text-align:center;
+}
+
+.header-logo img{
+    width: 13%;
+    border-radius: 50%;
+    padding-bottom: 2%;
+}
+
+.header-container{    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    /* padding: 2%; */
+}
+
+.header-container a {    
+    text-decoration: none;
+    font-weight: bold;
+    text-align:center;
+    color: white;    
+    padding: 10px;
+    width: 130px;
+    background-color: darkolivegreen;
+}
+
+/* --------------------- BANNER  ---------------------*/
+.banner {
+    padding-top: 2%;
+    margin: 0 auto;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* ------------ GRID DE PRODUTOS  -----------------*/
+
+.product-container{
+    background-color: white;
+    width: 100%;
+    position: relative;
+}
+
+.product-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.product{
+    padding: 3% 1% 0% 1%;
+}
+
+.product-img {
+    width: 100%;
+}
+
+.product-description {
+    text-align: start;
+}
+
+.product-description p {
+    font-size: 0.80em;
+}
+
+.product--btn-vermais {
+    width: 100%;
+    text-align: center; 
+}
+
+.product--btn-vermais a {
+    color: white;    
+    padding: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: darkolivegreen;
+    border-radius: 5px;   
+}
+
+.product-label {
+    position: relative;    
+    width: 15%;
+    left: 84%;
+    bottom: 415px;
+}
+
+.product-name {
+    background-color: rgba(233, 250, 79, 0.6);
+    position: relative;
+    width: 100%;
+    bottom: 390px;
+}
+
+.product-name h3 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
