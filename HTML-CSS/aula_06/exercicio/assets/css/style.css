@@ -1,0 +1,173 @@
+body {
+    font-size: 16px;
+    margin: 0 auto;
+    background-image: url("/aula_05/exercicio_1/assets/images/bg-what-the-hex.png");
+    background-repeat: repeat;
+}
+
+
+/* ---------------- HEADER --------------- */
+.header-logo {
+    width: 13%;
+    border-radius: 50%;
+    margin-top: 1%;
+}
+
+.header-logo-small {
+    width: 0%;
+    border-radius: 50%;
+    margin-top: 1%;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-button {
+    background-color: darkolivegreen;
+    border: darkolivegreen 2px;
+    text-align: center;
+    width:15%;
+    padding: 0.5%;
+    margin: 1% 0% 1% 0%;
+}
+
+.menu-button a {    
+    color: white;
+    text-decoration: none;
+}
+
+.menu-button a:hover{
+    font-weight: bold;
+}
+
+
+/* ---------------- BANNER --------------- */
+.banner {
+    margin-bottom: 1%;
+}
+
+
+/* ---------------- PRODUCT --------------- */
+.product {
+    position: relative;
+    margin-bottom: 2%;
+}
+
+.product p {
+    color: rgb(114, 114, 114);
+}
+
+
+/* ------- PRODUCT -> BTN VER MAIS --------- */
+.product-btn {
+    background-color: darkolivegreen;
+    width: 40%;
+    text-align: center;
+    padding: 2%;
+}
+
+.product-btn a {
+    text-decoration: none;
+    color: white;    
+}
+
+.product-btn a:hover{
+    font-weight: bold;
+}
+
+/* ------- PRODUCT -> IMG PLACEMENT --------- */
+.img-placement {
+    width: 100%;
+    position: relative;
+}
+
+.product-img {
+    width: 100%;
+}
+
+.product-label {
+    position: absolute;
+    width: 12%;
+    top: 2px;
+    left: 87%;
+}
+
+.product-ampliar {
+    width: 100%;
+    position: absolute;
+    background-color: rgba(153, 205, 50, 0.7);
+    text-align: center;
+    bottom: 45%;
+}
+
+.product-ampliar a {
+    text-decoration: none;
+    color: darkslategray;
+    padding: 1px 0px 1px;
+    font-weight: bold;
+}
+
+
+/* ---------------- FOOTER  --------------- */
+.footer-menu {
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    padding-top: 1.5%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: darkolivegreen;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    font-weight: bold;
+    color: white;
+}
+
+footer a:not(:last-child)::after {
+    content: "|";
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+/* ---------------- MEDIA QUERIES --------------- */
+
+@media (max-width: 480px) {
+    .header-logo {
+        width: 0%;
+    }
+
+    .header-logo-small {
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    .menu {
+        float: right;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menu-button {
+        width: 100%;
+        margin: 1% 0%;
+    }
+
+    .banner{
+        width: 0%;
+    }
+
+    .product-btn {
+        width: 100%;
+    }
+}
