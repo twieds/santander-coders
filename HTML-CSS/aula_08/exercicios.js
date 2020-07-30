@@ -36,7 +36,7 @@ function countDownAnoNovo(callback) {
     for (let i = 10; i > 0; i--) {
         console.log(i + "..."); 
     }
-    callback(felicitacoes);
+    callback();
 }
 
 countDownAnoNovo(felicitacoes);
@@ -44,21 +44,56 @@ countDownAnoNovo(felicitacoes);
 //----------------------------------------------------------------------------
 // 4 - Faça o mesmo utilizando Promise com concatenação de then
 const felicitacoes_promises = new Promise((resolve, reject) => {
-    console.log("Feliz ano novo!!!");
+    if (resolve) {
+        resolve("Feliz ano novo!!!");
+    }
+    else {
+        reject("quebrou 2!");
+    }
 });
 
 const countDownAnoNovo_promises = new Promise((resolve, reject) => {
+    var contador = '';
     for (let i = 10; i > 0; i--) {
-        console.log(i + "..."); 
+        contador += (i + "...\n"); 
     }
+    
+    if (resolve) {
+        resolve(contador);
+    } 
+    else {
+        reject("quebrou 1!");
+    }  
+    
 });
-countDownAnoNovo_promises.then(function(res) {return console.log(res)})
+
+countDownAnoNovo_promises.then(function(resolve) {return console.log(resolve)})
                 .then(function() {return felicitacoes_promises})
-                .then(function(res) {return console.log(res)});
+                .then(function(resolve) {return console.log(resolve)});
 
 //----------------------------------------------------------------------------
 // 5 - Agora repita a função utilizando o método async/await
+const anoNovo = async () => {
+    try {
+        const countdown = () => {
+            for (let i = 10; i > 0; i--) {
+                console.log(i + "..."); 
+            }
+        }
 
+        const felicitacoes = () => {
+            countdown();
+            return ("Feliz ano novo!!!");
+        }
+        
+        resolve = await felicitacoes();
+        console.log(resolve);
+    } catch (err) {
+        console.log(err)
+    }
+}
+
+anoNovo();
 
 //----------------------------------------------------------------------------
 // 6 - Crie um array com as seguintes notas [5.3, 4.7, 8.5, 7.1, 6.4, 9.2, 9.8, 5.5, 7.4, 7.0],
@@ -74,17 +109,17 @@ console.log(notas.filter(acimaDeSete));
 //----------------------------------------------------------------------------
 // 7 - Crie um array de objetos onde cada objeto será um produto de supermercado e terá o nome do produto e o seu respectivo
 // preço, agora construa uma função que some todos os valores e te devolva o total.
-function somaPrecoProdutos(produtos) {
-    var total = 0;
+var produtos_mercado = [
+    {nome: 'chocolate', preco: 3.00 }, 
+    {nome: 'aveia', preco: 3.50 }, 
+    {nome: 'leite', preco: 3.50 }
+];
 
-    for (let i = 0; i < produtos.length; i++) {
-        total += produtos[i].preco;
-    }
-    return "Valor total dos produtos: R$" + total;
-}
+function somaPrecoProdutos(total, produto) {
+    return total + produto.preco;
+};
 
-var produtos_mercado = [{nome: 'chocolate', preco: 3.00 }, {nome: 'aveia', preco: 3.50 }, {nome: 'leite', preco: 3.50 }];
-console.log(somaPrecoProdutos(produtos_mercado));
+console.log(produtos_mercado.reduce(somaPrecoProdutos, 0));
 
 //----------------------------------------------------------------------------
 // 8 - Em uma escola ficou definido que os alunos do 8º ano terão aulas de história 
@@ -92,7 +127,6 @@ console.log(somaPrecoProdutos(produtos_mercado));
 // Você deve criar uma função que receba um array de objetos contendo nome e série de cada aluno e 
 // atribua a sua respectiva disciplina da quarta-feira. 
 // (O array de alunos deve ser criado como você desejar contanto que contenha pelo menos 5 alunos).
-
 var alunos = [
     {aluno: "Maria", serie: 8, disciplina: ''},
     {aluno: "João", serie: 5, disciplina: ''},
