@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" type="text/javascript"></script>
+    <title>Eventos de click</title>
+</head>
+<body onresize="alert('a pagina foi redimensionada')">
+
+    <!-- eventos de click -->
+    <div onclick=boasVindas()> on click </div>
+    <div ondblclick=boasVindas()> on double click</div>
+    <div onmouseover=boasVindas()> on mouse over</div>
+    <div onmouseout=boasVindas()> on mouse out</div>
+
+    <!-- eventos de teclado -->
+    <input type="text" placeholder="onkeydown" onkeydown="alert('uma tecla foi pressionada')">
+    <input type="text" placeholder="onkeypress" onkeypress="alert('uma tecla foi pressionada')">
+    <input type="text" placeholder="onkeyup" onkeyup="alert('uma tecla foi pressionada')">
+
+    <!-- eventos de janela (usar dentro do body)  -->
+    <!-- <body onload="alert('a pagina foi carregada completamente')"> -->
+    <!-- <body onresize="alert('a pagina foi redimensionada')"> -->
+
+    <input type="text" placeholder="onfocus" onfocus="setaBG(this)">
+    <!-- <input type="text" placeholder="onblur" onfocus="alert('perdeu o foco')"> -->
+
+    <select onchange="alert('A opção foi alterada')">
+        <option value="1"> Primeira opção</option>
+        <option value="2"> Segunda opção</option>
+    </select>
+</body>
+</html>
