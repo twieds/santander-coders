@@ -1,0 +1,16 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+div {
+    margin: 10px 10px 10px 10px;
+}
+
+.btn {
+    padding: 10px 5px 10px 5px;
+    width: 10%;
+    text-align: center;
+}
+
