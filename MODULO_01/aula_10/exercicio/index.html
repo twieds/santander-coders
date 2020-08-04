@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <title>Formulários</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" style="text-align: center;">
+            <h1>Exercício de formulários</h1>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-7">
+                <ol>
+                    <!-- EXERCICIO 1 -->
+                    <li> Criar uma função que receba e imprima em linha de comando os dados de um formulário.
+                        <ol type="a">
+                            <li>
+                                Todos os campos do formulário devem ser obrigatórios. Caso algum deles fique sem preencher,
+                                no momento do envio, o formulário deve mostrar um alerta: “O campo X é obrigatório”. É bom
+                                esclarecer que essa validação deve ser feita por JavaScript, não por meio do atributo
+                                required .
+                            </li>
+                            <li>
+                                Adicionar o campo senha duas vezes e, caso os valores não sejam iguais, exibir uma mensagem
+                                de erro.
+                            </li>
+                        </ol>
+                    </li>
+                    <br>
+                    <!-- EXERCICIO 2 -->
+                    <li>Criar uma função que receba os valores de Nome e Sobrenome e os inclua em uma variável como string.</li>
+                    <br>
+                    <!-- EXERCICIO 3 -->
+                    <li>Abrir um formulário criado anteriormente em aula (por exemplo: register.html). Usando as Dev Tools
+                        do Chrome, remover as validações (atributos type e required). É possível “enviar” o formulário? Por
+                        quê?
+                        <ol type="a">
+                            <li>Criar uma função para que as validações que evitamos sejam feitas.</li>
+                            <li>Adicionar o campo de senha duas vezes e validar que os dois sejam iguais.</li>
+                            <li>Adicionar um checkbox que permita que o usuário escolha se quer ou não receber notícias
+                                sobre o site.</li>
+                            <li>Criar dois botões: um que redefina todos os campos e outro que permita ocultar o formulário
+                                e mostrar um "ul" com cada dado inserido no form (nome e valor).</li>
+                            <li>Caso o usuário seja do sexo masculino, a página deve mostrar o fundo de uma cor e, caso seja
+                                do sexo feminino, de outra. Para não excluir ninguém, adicionar uma terceira opção
+                                (“outro”), que exiba outra cor.</li>
+                            <li>Na tela que mostra os dados, adicionar um botão “editar” que permita editar o formulário
+                                enviado. Ao confirmar a edição, perguntar ao usuário: “Quer mesmo mudar o valor do campo X?”
+                                para os campos modificados.|</li>
+                            <li>Para analisar, em que ordem são preenchidos os dados do formulário, criar um script que
+                                salve em um array a ordem que os dados foram inseridos em cada campo com o seguinte formato:
+                                <ol type="i">
+                                    <li>“Estabelecer o foco no elemento X”</li>
+                                    <li>“Inserir dados no elemento X” (caso sejam inseridos)</li>
+                                    <li>“Inserir dados no elemento X” (caso sejam inseridos)</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="col-lg-5">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Sobrenome:</label>
+                        <input type="text" class="form-control" id="lastname">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha:</label>
+                        <input type="password" class="form-control" id="password" placeholder="********">
+                    </div>
+                    <div class="form-group">
+                        <label for="password-confirmation">Confirme a senha:</label>
+                        <input type="password" class="form-control" id="password-confirmation" placeholder="********">
+                    </div>
+                    <button class="btn btn-primary" onclick="fieldValidation()">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
