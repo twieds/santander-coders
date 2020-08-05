@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    
     <title>Formulários</title>
 </head>
 
@@ -18,7 +18,7 @@
         </div>
         
         <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-6">
                 <ol>
                     <!-- EXERCICIO 1 -->
                     <li> Criar uma função que receba e imprima em linha de comando os dados de um formulário.
@@ -69,33 +69,83 @@
                 </ol>
             </div>
 
-            <div class="col-lg-5">
-                <form action="">
-                    <div class="form-group">
-                        <label for="name">Nome:</label>
-                        <input type="text" class="form-control" id="name">
+
+            <!-- 
+
+
+                EXECUÇÃO DOS EXERCICIOS
+
+
+             -->
+
+
+            <div class="col-lg-6">
+                <!-- FORMULÁRIO -->
+                <form action="submit" id="formulario">
+
+                    <!-- ROW DE DADOS PESSOAIS -->
+                    <div class="form-row ">
+                        <div class="form-group col-md-4">
+                            <label for="name">Nome:</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+    
+                        <div class="form-group col-md-5">
+                            <label for="lastname">Sobrenome:</label>
+                            <input type="text" class="form-control" id="lastname">
+                        </div>  
+                        
+                        <div class="form-group col-md-3">
+                            <label for="gender">Gênero</label>
+                            <select class="form-control" id="gender">
+                              <option value="F">Feminino</option>
+                              <option value="M">Masculino</option>
+                              <option value="O">Outro</option>
+                              <option value="NA">Prefiro não responder</option>
+                            </select>
+                          </div>
                     </div>
-                    <div class="form-group">
-                        <label for="lastname">Sobrenome:</label>
-                        <input type="text" class="form-control" id="lastname">
+                
+                    <!-- ROW EMAIL -->
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@email.com">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="name@email.com">
+
+                    <!-- ROW SENHA -->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="password">Senha:</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        
+                        <div class="form-group col-md-6">
+                            <label for="password-confirmation">Confirme a senha:</label>
+                            <input type="password" class="form-control" id="password-confirmation">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="password">Senha:</label>
-                        <input type="password" class="form-control" id="password" placeholder="********">
+
+                    <!-- ROW CHECKBOX NEWSLETTER -->
+                    <div class="form-row col-md-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="cb-newsletter">
+                            <label class="form-check-label" for="cb-newsletter">Desejo me inscrever na newsletter</label>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="password-confirmation">Confirme a senha:</label>
-                        <input type="password" class="form-control" id="password-confirmation" placeholder="********">
+
+                    <!-- ROW BOTÕES -->
+                    <div class="form-row col-md-12">
+                        <button class="btn btn-primary" type="submit" onclick="fieldValidation()">Enviar</button>
+                        <button class="btn btn-primary" type="reset">Limpar</button>
                     </div>
-                    <button class="btn btn-primary" onclick="fieldValidation()">Enviar</button>
                 </form>
             </div>
         </div>
     </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

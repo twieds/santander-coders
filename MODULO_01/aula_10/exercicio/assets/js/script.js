@@ -13,11 +13,12 @@ function allFieldsAreFilled() {
         ['password-confirmation', 'confirmação da senha']
     ];
 
-    fields.forEach(field => {
-        if (document.getElementById(field[0]).value == '' || document.getElementById(field[0]).value == null) {
-            alert('O campo ' + field[1] + ' é obrigatório.')
+    for (let i = 0; i < fields.length; i++) {
+        if (document.getElementById(fields[i][0]).value == '' || document.getElementById(fields[i][0]).value == null) {
+            alert('O campo ' + fields[i][1]  + ' é obrigatório.');
+            return false;
         }
-    });
+    }
 }
 
 function validatePasswords() {
@@ -37,3 +38,29 @@ function getFullName() {
     var fullname = name + " " + lastname;
     console.log(fullname);
 }
+
+$("#formulario").submit(function(event){
+    event.preventDefault();
+});
+
+
+document.getElementById('gender').addEventListener("change", function() {
+    var gender = document.getElementById('gender').value;
+
+    switch (gender) {
+        case 'F':
+            document.body.style.backgroundColor = 'pink';
+            break;
+        case 'M':
+            document.body.style.backgroundColor = 'lightblue';
+            break;
+        case 'O':
+            document.body.style.backgroundColor = 'lightyellow';
+            break;
+        case 'NA':
+            document.body.style.backgroundColor = 'white';
+            break;
+        default:
+            break;
+    }
+});
