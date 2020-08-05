@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos click</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+            $("#div1").click(function() {
+                alert("Elemento clicado");
+                // click, dblclick, mousedown, mouseover, mouseout
+            });
+
+            $("#campo1").keydown(function() {
+                alert("Botão foi pressionado");
+                // keydown, keypress, keyup 
+            });
+
+
+            $(".input1").blur(function () {
+                console.log('O elemento perdeu o foco');
+            });
+
+            $(".campo2").blur(function () {
+                console.log('O elemento foi trocado');
+            });
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-lg-4">
+            <h3>Eventos de click</h3>
+            <div id="div1"></div>
+        </div>
+
+        <div class="col-lg-4">
+            <h3>Eventos de teclado</h3>
+            <input type="text" id="campo1">
+        </div>
+        
+        <div class="col-lg-4">
+            <h3>Eventos de Formulario</h3>
+            <input type="text" class=".input1">
+
+            <select class="input2">
+                <option value="1">Primeira opção</option>
+                <option value="2">Segunda opção</option>
+            </select>
+        </div>
+        
+    </div>
+    
+</body>
+
+</html>
