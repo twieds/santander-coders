@@ -13,7 +13,7 @@
 | :heavy_check_mark: |  [08](aula_08) | 29/07/20 | JS e funções HTML
 | :heavy_check_mark: |  [09](aula_09) | 31/07/20 | DOM e eventos
 | :heavy_check_mark: |  [10](aula_10) | 03/08/20 | Formulários e AJAX
-||  [11](aula_11) | 05/08/20 | Jquery
+| :heavy_check_mark: |  [11](aula_11) | 05/08/20 | Jquery
 |  |  [12](aula_12) | 07/08/20 | SPA
 
 :clock3: 42h
