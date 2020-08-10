@@ -1,0 +1,235 @@
+:root {
+    height: 100vh;
+    width: 100vw;
+    font-size: 1em;
+}
+
+body {
+    background-image: linear-gradient(to bottom left, rgb(85, 207, 190),  rgb(252, 124, 214));
+}
+
+button {     
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: slateblue;
+    text-decoration: none;
+    
+    transition: background 0.2s;
+
+    border: none;
+    border-radius: 9px;
+}
+
+button:hover {
+    background-color: rgb(160, 86, 209);
+}
+
+
+/*  --------------- GAME CONTAINER ------------------ */
+
+.container-game  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    margin: 0 auto;
+
+    width: 90%;
+    height: 450px;
+    max-width: 450px;
+}
+
+/*  --------------- INFO CONTAINER ------------------ */
+.info {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.info header {
+    text-align: center;
+    align-self: center;
+}
+
+/*  --------------- PLAYERS-INFO ------------------ */
+.players-info {
+    align-self: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*  --------------- PLAYER ------------------ */
+.player {
+    display: flex;    
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.player img {
+    width: 25%;
+    text-align: center;
+}
+
+.player input {
+    width: 50%;
+    border: none;
+    background: transparent;
+    outline: 0;
+    border-bottom: gray 2px solid;
+    /* color: white; */
+}
+
+.player input:focus-within{
+    content: "";
+    border-bottom: blueviolet 2px solid;
+}
+
+/*  --------------- START GAME ------------------ */
+.start-game {
+    align-self: flex-end;
+    margin-bottom: 5%;
+}
+
+.start-game button {
+    margin-left: 5%;
+    width: 90%;
+    height: 40px;
+    color: white;
+}
+
+/*  --------------- TABLE CONTAINER ------------------ */
+.board-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+/*  --------------- GAME SCORE  ------------------ */
+.game-score {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.game-score img {
+    width: 20%;
+}
+
+.player-score-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.player-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    font-weight: bold;
+    color: gray;
+}
+
+#player-one {
+    border-right: lightgray 1px solid;
+}
+
+/*  --------------- BOARD  ------------------ */
+.board {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.board table {
+    text-align: center;
+    margin: 0 auto;
+    width: 85%;
+    border-collapse: collapse;
+}
+
+.board td {
+    border: 1px solid slateblue;
+}
+
+.board td:first-of-type {
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+
+.board td:nth-of-type(2) {
+    border-top-color: transparent;
+}
+
+.board td:nth-of-type(3) {
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+
+.board tr:nth-of-type(3) td {
+    border-bottom-color: transparent;
+}
+
+/*  --------------- TABLE CELL  ------------------ */
+.table-cell img {
+    width: 65px;
+    padding: 5px;
+}
+
+.table-cell {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80px;
+    width: 80px;
+}
+
+/*  --------------- GAME CONTROLLERS  ------------------ */
+.game-controllers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+.game-controllers button {
+    height: 30px;
+    margin: 0% 5%;
+    color: white;
+}
+
+/* DESKTOP */
+@media (min-width: 700px) {
+    .game-controllers {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .game-controllers button {
+        height: 35px;
+        width: 50%;
+        color: white;
+        align-self: flex-end;
+    }
+
+}
+

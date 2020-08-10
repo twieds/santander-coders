@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <title>TIC TAC TOE</title>
+</head>
+
+<body>
+
+    <!-- START CONTAINER GAME -->
+    <div class="container-game ">
+
+        <!-- START INFO -->
+        <div class="info" id="info">
+            <header>
+                <h1>TIC TAC TOE</h1>
+            </header>
+    
+            <div class="players-info">
+                <div class="player">
+                    <img src="assets/images/cross.png" alt="player one">
+                    <input type="text" maxlength="15" placeholder="Player name" id="player-one-name">
+                </div>
+        
+                <div class="player">
+                    <img src="assets/images/circle.png" alt="player two">
+                    <input type="text" maxlength="15" placeholder="Player name" id="player-two-name">
+                </div>        
+            </div>
+        
+            <div class="start-game" id="start-game">
+                <button>START GAME</button>
+            </div>
+        </div>
+        <!-- END INFO -->
+
+        <!-- START BOARD CONTAINER-->
+        <div class="board-container" id="game-board">
+            <header>
+
+                <div class="game-score">
+
+                    <div class="player-score-wrapper" id="player-one">
+                        <img src="assets/images/cross.png" alt="player one">
+
+                        <div class="player-score">
+                            <span class="name" id="score-name-player-one"></span>
+                            <span class="score" id="score-player-one">0</span>
+                        </div>
+                    </div>
+
+                    <div class="player-score-wrapper">
+                        <div class="player-score">
+                            <span class="name" id="score-name-player-two"></span>
+                            <span class="score" id="score-player-two">0</span>
+                        </div>
+
+                        <img src="assets/images/circle.png" alt="player two">
+                    </div>
+                    
+                </div>
+            </header>
+
+            <!-- START BOARD -->
+            <div class="board">
+
+                <table>
+                    <!-- ROW 1 -->
+                    <tr>
+                        <td>
+                            <div class="table-cell" id="0-0"></div>
+                        </td>
+                        <td>
+                            <div class="table-cell" id="0-1"></div>
+                        </td>
+                        <td>
+                            <div class="table-cell" id="0-2"></div>
+                        </td>
+                    </tr>
+
+                    <!-- ROW 2 -->
+                    <tr>
+                        <td>
+                            <div class="table-cell" id="1-0"></div>
+                        </td>
+                        <td>
+                            <div class="table-cell" id="1-1"></div>
+                        </td>
+                        <td>
+                            <div class="table-cell" id="1-2"></div>
+                        </td>
+                    </tr>
+
+                    <!-- ROW 3 -->
+                    <tr>
+                        <td>
+                            <div class="table-cell" id="2-0"></div>
+                        </td>
+                        <td>
+                            <div class="table-cell" id="2-1"></div>
+                        </td>
+                        <td>
+                            <div class="table-cell" id="2-2"></div>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <!-- END BOARD -->
+
+            <div class="game-controllers">
+                <button id="restart">
+                    RESTART GAME
+                </button>
+
+                <button id="reset">
+                    RESET SCORE
+                </button>
+            </div>
+        </div>
+        <!-- END BOARD CONTAINER-->
+    </div>
+    <!-- END CONTAINER GAME -->
+
+
+
+
+</body>
+
+</html>
