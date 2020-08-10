@@ -214,6 +214,27 @@ button:hover {
     color: white;
 }
 
+.footer-wrapper {
+    font-size: 0.80em;
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.footer-wrapper a {
+    text-decoration: none;
+    color:slateblue;
+    cursor: pointer;
+}
+
+.footer-wrapper a:hover {
+    text-decoration: none;
+    color:rebeccapurple;
+    cursor: pointer;
+}
+
 /* DESKTOP */
 @media (min-width: 700px) {
     .game-controllers {
@@ -229,6 +250,10 @@ button:hover {
         width: 50%;
         color: white;
         align-self: flex-end;
+    }
+
+    .footer-wrapper {
+        font-size: 1em;
     }
 
 }
