@@ -6,7 +6,7 @@
 | :heavy_check_mark: | [13](aula_13) | 10/08/20 | Fundamentos da Programação
 | :heavy_check_mark: | [14](aula_14) | 12/08/20 | Introdução a classes
 | :heavy_check_mark: | [15](aula_15) | 14/08/20 | Exercícios classes
-| :white_large_square: | [16](aula_16) | 17/08/20 | Introdução à Programação Orientada a Objetos
+| :heavy_check_mark: | [16](aula_16) | 17/08/20 | Construtores, setters and getters, listas
 | :white_large_square: | [17](aula_17) | 19/08/20 | POO e Java
 | :white_large_square: | [18](aula_18) | 21/08/20 | Herança e Classe Abstrata
 | :white_large_square: | [19](aula_19) | 24/08/20 | Interfaces, Equals, Override, Overload e This
