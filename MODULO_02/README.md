@@ -7,7 +7,7 @@
 | :heavy_check_mark: | [14](aula_14) | 12/08/20 | Introdução a classes
 | :heavy_check_mark: | [15](aula_15) | 14/08/20 | Exercícios classes
 | :heavy_check_mark: | [16](aula_16) | 17/08/20 | Construtores, setters and getters, listas
-| :white_large_square: | [17](aula_17) | 19/08/20 | POO e Java
+| :heavy_check_mark: | [17](aula_17) | 19/08/20 | Herança
 | :white_large_square: | [18](aula_18) | 21/08/20 | Herança e Classe Abstrata
 | :white_large_square: | [19](aula_19) | 24/08/20 | Interfaces, Equals, Override, Overload e This
 | :white_large_square: | [20](aula_20) | 26/08/20 | Collection (Estrutura de Dados) e Exceções
