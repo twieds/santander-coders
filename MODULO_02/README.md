@@ -8,7 +8,7 @@
 | :heavy_check_mark: | [15](aula_15) | 14/08/20 | Exercícios classes
 | :heavy_check_mark: | [16](aula_16) | 17/08/20 | Construtores, setters and getters, listas
 | :heavy_check_mark: | [17](aula_17) | 19/08/20 | Herança
-| :white_large_square: | [18](aula_18) | 21/08/20 | Herança e Classe Abstrata
+| :heavy_check_mark: | [18](aula_18) | 21/08/20 | Polimorfismo, Classe Abstrata, Interfaces
 | :white_large_square: | [19](aula_19) | 24/08/20 | Interfaces, Equals, Override, Overload e This
 | :white_large_square: | [20](aula_20) | 26/08/20 | Collection (Estrutura de Dados) e Exceções
 | :white_large_square: | [21](aula_21) | 38/08/20 | Introdução à Engenharia de Software
