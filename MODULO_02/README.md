@@ -10,7 +10,7 @@
 | :heavy_check_mark: | [17](aula_17) | 19/08/20 | Herança
 | :heavy_check_mark: | [18](aula_18) | 21/08/20 | Polimorfismo, Classe Abstrata, Interfaces
 | :heavy_check_mark: | [19](aula_19) | 24/08/20 | Exercícios
-| :white_large_square: | [20](aula_20) | 26/08/20 | Collection (Estrutura de Dados) e Exceções
+| :heavy_check_mark: | [20](aula_20) | 26/08/20 | Introdução à Engenharia de Software
 | :white_large_square: | [21](aula_21) | 38/08/20 | Introdução à Engenharia de Software
 | :white_large_square: | [22](aula_22) | 31/08/20 | Ciclo de Vida de Projetos
 | :white_large_square: | [23](aula_23) | 02/09/20 | Metodologias Ágeis
