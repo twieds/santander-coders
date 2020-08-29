@@ -11,7 +11,7 @@
 | :heavy_check_mark: | [18](aula_18) | 21/08/20 | Polimorfismo, Classe Abstrata, Interfaces
 | :heavy_check_mark: | [19](aula_19) | 24/08/20 | Exercícios
 | :heavy_check_mark: | [20](aula_20) | 26/08/20 | Introdução à Engenharia de Software
-| :white_large_square: | [21](aula_21) | 38/08/20 | Introdução à Engenharia de Software
+| :heavy_check_mark: | [21](aula_21) | 28/08/20 | Introdução à Engenharia de Software
 | :white_large_square: | [22](aula_22) | 31/08/20 | Ciclo de Vida de Projetos
 | :white_large_square: | [23](aula_23) | 02/09/20 | Metodologias Ágeis
 
