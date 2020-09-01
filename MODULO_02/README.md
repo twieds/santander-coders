@@ -12,7 +12,5 @@
 | :heavy_check_mark: | [19](aula_19) | 24/08/20 | Exercícios
 | :heavy_check_mark: | 20 | 26/08/20 | Introdução à Engenharia de Software
 | :heavy_check_mark: | 21 | 28/08/20 | Ciclo de Vida de Projetos, Metodologias Ágeis
-| :white_large_square: | [22](aula_22) | 31/08/20 | Ciclo de Vida de Projetos
-| :white_large_square: | [23](aula_23) | 02/09/20 | Metodologias Ágeis
 
-:clock3: 38.5h
+:clock3: 31.5h
