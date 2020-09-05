@@ -2,16 +2,9 @@
 Códigos desenvolvidos durante o curso de **Desenvolvimento Web Full Stack Java** ministrado pela **Digital House**.
 
 ## :orange_book: Módulos
-- #### [Modulo 1 - Introdução a Web Full Stack](/MODULO_01)
-  - HTML
-  - CSS
-  - JS
-  - Bootstrap
-  - jQuery
-  - Node.js
-  
+- #### [Modulo 1 - Introdução a Web Full Stack](/MODULO_01)  
 - #### [Módulo 2 - Fundamentos da Programação](/MODULO_02)
-- #### Módulo 3 - Bancos de Dados e Aplicações
+- #### [Módulo 3 - Bancos de Dados e Aplicações](/MODULO_03)
 - #### Modulo 4 - Spring Framework e Testes
 - #### Modulo 5 - Web Services
 - #### Modulo 6 - Projeto Integrador
