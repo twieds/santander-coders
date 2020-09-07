@@ -4,7 +4,7 @@
 | |  Aula | Data  |  Conteúdo |
 |------------| ------------ | ------------ |------------
 | :heavy_check_mark: | 22 | 31/08/20 | Fundamentos de Banco de Dados, SGBD's e Introdução MySQL
-| :heavy_check_mark: | 23 | 02/09/20 | Métodologias ágeis
+| :heavy_check_mark: | 23 | 02/09/20 | Metodologias ágeis
 | :heavy_check_mark: | [24](aula_24) | 04/09/20 | Manipulação de Dados (Inserção, Remoção e Atualização) e Consultas básicas
 | :white_large_square: | [25](aula_25) | 09/09/20 | Consultas Avançadas (Funções de agregação, Junções entre tabelas, Cláusula GROUP BY e Cláusula HAVING)
 | :white_large_square: | [26](aula_26) | 11/09/20 | Introdução a Sistemas Web(Java EE) e Servidor (Tomcat)
