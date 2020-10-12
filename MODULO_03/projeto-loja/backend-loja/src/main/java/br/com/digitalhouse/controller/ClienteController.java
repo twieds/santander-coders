@@ -14,7 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.digitalhouse.model.Cliente;
-import br.com.digitalhouse.repository.ClienteRepository;
+import br.com.digitalhouse.model.Telefone;
+import br.com.digitalhouse.service.ClienteService;
 
 @CrossOrigin
 @RestController
@@ -22,42 +23,36 @@ import br.com.digitalhouse.repository.ClienteRepository;
 public class ClienteController {
 	
 	@Autowired
-	private ClienteRepository repository;
+	private ClienteService service;
 	
 	@GetMapping
 	public List<Cliente> listar() {
-		return repository.findAll();
+		return service.listar();
 	}
 	
 	@GetMapping("/{id}")
 	public Cliente buscar(@PathVariable Long id) {
-		return repository.findById(id).orElse(null);
+		return service.buscar(id);
+	}
+	
+	@GetMapping("/{id}/telefones")
+	public List<Telefone> buscarTelefones(@PathVariable Long id) {
+		return service.buscarTelefones(id);
 	}
 	
 	@PostMapping
 	public void salvar(@RequestBody Cliente cliente) {
-		repository.save(cliente);
+		service.salvar(cliente);
 	}
 	
 	@DeleteMapping("/{id}")
-	public void delete(@PathVariable Long id) {
-		repository.deleteById(id);
+	public void excluir(@PathVariable Long id) {
+		service.excluir(id);
 	}
 	
 	@PutMapping("/{id}")
 	public void atualizar(@PathVariable Long id, @RequestBody Cliente cliente) {
-		Cliente cli = repository.findById(id).get();
-		
-		cli.setNome(cliente.getNome());
-		cli.setSobrenome(cliente.getSobrenome());
-		cli.setTelefone(cliente.getTelefone());
-		cli.setDataNascimento(cliente.getDataNascimento());
-		cli.setCpf(cliente.getCpf());
-		cli.setRg(cliente.getRg());
-		cli.setEmail(cliente.getEmail());
-		
-		
-		repository.save(cli);
+		service.atualizar(id, cliente);
 	}
 
 }

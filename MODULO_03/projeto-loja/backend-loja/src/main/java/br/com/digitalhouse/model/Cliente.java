@@ -1,10 +1,14 @@
 package br.com.digitalhouse.model;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -21,10 +25,11 @@ public class Cliente {
 	@Column
 	private String sobrenome;
 	
-	@Column
-	private String telefone;
+
+	@OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
+	private List<Telefone> telefone;
 	
-	@Column
+	@Column(name="data_nascimento")
 	private String dataNascimento;
 	
 	@Column
@@ -38,7 +43,7 @@ public class Cliente {
 
 	public Cliente() {}
 	
-	public Cliente(Long id, String nome, String sobrenome, String telefone, String dataNascimento, String cpf,
+	public Cliente(Long id, String nome, String sobrenome, List<Telefone> telefone, String dataNascimento, String cpf,
 			String rg, String email) {
 		this.id = id;
 		this.nome = nome;
@@ -74,11 +79,11 @@ public class Cliente {
 		this.sobrenome = sobrenome;
 	}
 
-	public String getTelefone() {
+	public List<Telefone> getTelefone() {
 		return telefone;
 	}
 
-	public void setTelefone(String telefone) {
+	public void setTelefone(List<Telefone> telefone) {
 		this.telefone = telefone;
 	}
 
