@@ -9,20 +9,31 @@ import org.springframework.stereotype.Service;
 
 import br.com.digitalhouse.model.Cliente;
 import br.com.digitalhouse.model.Telefone;
+import br.com.digitalhouse.repository.CidadeRepository;
 import br.com.digitalhouse.repository.ClienteRepository;
+import br.com.digitalhouse.repository.EstadoRepository;
 
 @Service
 public class ClienteService {
 	
 	@Autowired
 	private ClienteRepository repository;
+	
+	@Autowired
+	private EstadoRepository repositoryEstado;
+	
+	@Autowired
+	private CidadeRepository repositoryCidade;
 
 	@Transactional
 	public void salvar(Cliente cliente) {
 		
+		repositoryEstado.save(cliente.getEndereco().getCidade().getEstado());
+		repositoryCidade.save(cliente.getEndereco().getCidade());
+		
 		cliente.getTelefone().stream().
 		forEach(telefone -> telefone.setCliente(cliente));
-				
+	
 		repository.save(cliente);		
 	}
 
