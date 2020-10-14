@@ -1,6 +1,7 @@
 package br.com.digitalhouse.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import javax.transaction.Transactional;
 
@@ -43,8 +44,8 @@ public class ClienteService {
 	}
 	
 	
-	public Cliente buscar(Long id) {
-		return repository.findById(id).get();
+	public Optional<Cliente> buscar(Long id) {
+		return repository.findById(id);
 	}
 
 	public List<Cliente> listar() {
